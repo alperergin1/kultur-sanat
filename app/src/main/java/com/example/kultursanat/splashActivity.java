@@ -129,6 +129,14 @@ public class splashActivity extends AppCompatActivity {
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
         binding.dummyButton.setOnTouchListener(mDelayHideTouchListener);
+
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                startLoginActivity();
+            }
+        }, 2000); // 3 saniye (3000 milisaniye) beklet
     }
 
     @Override
