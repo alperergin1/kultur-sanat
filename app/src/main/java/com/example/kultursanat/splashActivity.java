@@ -5,6 +5,7 @@ import android.annotation.SuppressLint;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -14,6 +15,7 @@ import android.view.View;
 import android.view.WindowInsets;
 
 import com.example.kultursanat.databinding.ActivitySplashBinding;
+import com.example.kultursanat.ui.login.LoginActivity;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -140,11 +142,13 @@ public class splashActivity extends AppCompatActivity {
     }
 
     private void toggle() {
-        if (mVisible) {
-            hide();
-        } else {
-            show();
-        }
+        startLoginActivity();
+    }
+    private void startLoginActivity(){
+        // Activity1.java içinde
+        Intent intent = new Intent(splashActivity.this, LoginActivity.class);
+        startActivity(intent);
+
     }
 
     private void hide() {
