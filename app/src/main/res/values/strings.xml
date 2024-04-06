@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Kultur Sanat</string>
+    <string name="title_activity_splash">splashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="splash_screen">splash\nscreen</string>
+</resources>
