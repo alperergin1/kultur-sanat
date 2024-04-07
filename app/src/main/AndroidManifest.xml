@@ -20,7 +20,6 @@
             android:name=".SplashActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="true"
-            android:label="@string/splash_screen"
             android:theme="@style/Theme.KulturSanat.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

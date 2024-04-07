@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
 
 public class SplashActivity extends AppCompatActivity {
@@ -17,11 +18,28 @@ public class SplashActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_splash);
+
+        findViewById(R.id.button_maine_git).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startMainActivity();
+            }
+        });
+
+        findViewById(R.id.button_logine_git).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startLoginActivity();
+            }
+        });
     }
 
-    private void startMainActivity(){
+    private void startLoginActivity() {
         Intent intent = new Intent(SplashActivity.this, MainActivity.class);
         startActivity(intent);
-
+    }
+    private void startMainActivity() {
+        Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+        startActivity(intent);
     }
 }
