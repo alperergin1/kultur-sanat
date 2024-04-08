@@ -19,10 +19,21 @@ public class MainActivity extends AppCompatActivity {
                 startCinemaActivity();
             }
         });
+
+        findViewById(R.id.button_tiyatroya_git).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startTheatreActivity();
+            }
+        });
     }
 
     private void startCinemaActivity() {
         Intent intent = new Intent(MainActivity.this, CinemaActivity.class);
+        startActivity(intent);
+    }
+    private void startTheatreActivity() {
+        Intent intent = new Intent(MainActivity.this, TheatreActivity.class);
         startActivity(intent);
     }
 }

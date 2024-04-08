@@ -10,8 +10,9 @@
     <string name="sign_up_screen">Kayıt ekranı</string>
     <string name="summary_and_confirmation_screen">Özet ve onaylama ekranı</string>
     <string name="theatres_screen">Tiyatrolar ekranı</string>
-    <string name="theatre_screen">Tiyatrı ekranı</string>
-    <string name="tiyatrolar_git">Tiyatro Seç</string>
+    <string name="theatre_screen">Tiyatro ekranı</string>
+    <string name="tiyatrolara_git">Tiyatrolara git</string>
+    <string name="tiyatroya_git">Tiyatro Seç</string>
     <string name="ozet_onaya_git">Onaylama ekranına git</string>
     <string name="koltuk1_seç">1</string>
     <string name="koltuk2_seç">2</string>
