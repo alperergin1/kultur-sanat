@@ -9,7 +9,7 @@
         android:id="@+id/fullscreen_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_gravity="top|center_horizontal"
         android:gravity="center"
         android:text="@string/cinema_screen"
         android:textSize="30sp" />
@@ -25,13 +25,7 @@
             android:id="@+id/button_maine_git"
             android:layout_width="200dp"
             android:layout_height="60dp"
-            android:text="@string/maine_git" />
-
-        <Button
-            android:id="@+id/button_logine_git"
-            android:layout_width="200dp"
-            android:layout_height="60dp"
-            android:text="@string/logine_git" />
+            android:text="@string/interstellara_git" />
 
 
     </LinearLayout>
