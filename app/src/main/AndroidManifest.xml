@@ -13,6 +13,9 @@
         android:theme="@style/Theme.KulturSanat"
         tools:targetApi="31">
         <activity
+            android:name=".SummaryAndConfirmationActivity"
+            android:exported="false" />
+        <activity
             android:name=".TheatreSeatsActivity"
             android:exported="false" />
         <activity
