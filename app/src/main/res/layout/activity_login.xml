@@ -7,8 +7,8 @@
     <TextView
         android:id="@+id/fullscreen_content"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_height="26dp"
+        android:layout_gravity="top|center_horizontal"
         android:gravity="center"
         android:text="@string/login_screen"
         android:textSize="30sp" />
@@ -24,8 +24,15 @@
             android:id="@+id/button_maine_git"
             android:layout_width="200dp"
             android:layout_height="60dp"
-            android:text="@string/maine_git" />
+            android:text="@string/login_yap" />
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="|center_horizontal"
+        android:text="TextView" />
 
 </FrameLayout>

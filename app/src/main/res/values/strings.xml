@@ -16,6 +16,7 @@
     <string name="login_screen">Login ekranı</string>
     <string name="sinemaya_git">Sinemaya git</string>
     <string name="maine_git">Main\'e git</string>
+    <string name="login_yap">Login</string>
     <string name="interstellara_git">Interstellar</string>
     <string name="logine_git">Login\'e git</string>
 </resources>
