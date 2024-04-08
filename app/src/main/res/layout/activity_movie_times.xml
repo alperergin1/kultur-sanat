@@ -15,38 +15,6 @@
         tools:layout_editor_absoluteY="16dp" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="289dp"
-        android:layout_height="62dp"
-        android:text="saat2"
-        tools:layout_editor_absoluteX="61dp"
-        tools:layout_editor_absoluteY="98dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="289dp"
-        android:layout_height="62dp"
-        android:text="saat4"
-        tools:layout_editor_absoluteX="61dp"
-        tools:layout_editor_absoluteY="290dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="289dp"
-        android:layout_height="62dp"
-        android:text="saat3"
-        tools:layout_editor_absoluteX="61dp"
-        tools:layout_editor_absoluteY="190dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="289dp"
-        android:layout_height="62dp"
-        android:text="saat5"
-        tools:layout_editor_absoluteX="61dp"
-        tools:layout_editor_absoluteY="386dp" />
-
-    <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
