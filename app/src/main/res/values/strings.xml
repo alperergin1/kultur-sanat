@@ -15,8 +15,13 @@
     <string name="ozet_onaya_git">Onaylama ekranına git</string>
     <string name="koltuk1_seç">1</string>
     <string name="koltuk2_seç">2</string>
+    <string name="koltuk_secmeye_git">Koltuk Seç</string>
     <string name="theatre_seats_screen">Tiyatro koltukları ekranı</string>
     <string name="theatre_times_screen">Tiyatro saatleri ekranı</string>
+    <string name="tiyatro1_saat1_seç">19:00</string>
+    <string name="tiyatro1_saat2_seç">20:00</string>
+    <string name="tiyatro2_saat1_seç">19:00</string>
+    <string name="tiyatro2_saat2_seç">20:00</string>
     <string name="login_screen">Login ekranı</string>
     <string name="sinemaya_git">Sinemaya git</string>
     <string name="maine_git">Main\'e git</string>
