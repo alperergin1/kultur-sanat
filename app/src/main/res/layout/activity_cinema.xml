@@ -22,10 +22,10 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/button_maine_git"
+            android:id="@+id/button_film_saatlerine_git"
             android:layout_width="200dp"
             android:layout_height="60dp"
-            android:text="@string/interstellara_git" />
+            android:text="@string/film_saatlerine_git" />
 
 
     </LinearLayout>
