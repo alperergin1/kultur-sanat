@@ -17,7 +17,7 @@
         android:textSize="30sp" />
 
     <Button
-        android:id="@+id/button_cinema"
+        android:id="@+id/button_sinemaya_git"
         android:layout_width="200dp"
         android:layout_height="60dp"
         android:layout_gravity="bottom|center_horizontal"
