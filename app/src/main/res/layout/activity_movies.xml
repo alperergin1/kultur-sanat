@@ -14,6 +14,14 @@
         android:text="@string/movies_screen"
         android:textSize="30sp" />
 
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:text="Fİlm1" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,5 +37,7 @@
 
 
     </LinearLayout>
+
+
 
 </FrameLayout>
