@@ -1,88 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MovieSeatsActivity">
+    android:layout_gravity="center"
+    android:theme="@style/Theme.KulturSanat.Fullscreen">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="86dp"
-        android:layout_height="86dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="265dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="86dp"
-        android:layout_height="86dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="265dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="86dp"
-        android:layout_height="86dp"
-        android:text="9"
-        tools:layout_editor_absoluteX="280dp"
-        tools:layout_editor_absoluteY="265dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="86dp"
-        android:layout_height="86dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="156dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="86dp"
-        android:layout_height="86dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="280dp"
-        tools:layout_editor_absoluteY="156dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="86dp"
-        android:layout_height="86dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="280dp"
-        tools:layout_editor_absoluteY="53dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="86dp"
-        android:layout_height="86dp"
-        android:text="2"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="53dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="86dp"
-        android:layout_height="86dp"
-        android:text="1"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="53dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="86dp"
-        android:layout_height="86dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="156dp" />
-
-    <Button
-        android:id="@+id/button3"
+    <TextView
+        android:id="@+id/fullscreen_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Confirm"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="645dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_gravity="top|center_horizontal"
+        android:gravity="center"
+        android:text="@string/movie_seats_screen"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="bottom|center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_film_koltuk_1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Button"/>
+
+        <Button
+            android:id="@+id/button_film_koltuk_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Button"/>
+
+        <Button
+            android:id="@+id/button_film_koltuk_3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/button_film_koltuk_4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/button_film_koltuk_5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Button"/>
+
+        <Button
+            android:id="@+id/button_film_koltuk_6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Button"/>
+
+        <Button
+            android:id="@+id/button_film_koltuk_7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="2"/>
+
+        <Button
+            android:id="@+id/button_film_koltuk_8"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="1"/>
+
+        <Button
+            android:id="@+id/button_film_koltuk_9"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/button_film_koltuk_onay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm" />
+
+
+    </LinearLayout>
+
+</FrameLayout>
