@@ -13,9 +13,11 @@
         android:theme="@style/Theme.KulturSanat"
         tools:targetApi="31">
         <activity
+            android:name=".CinemaActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
-
         <activity
             android:name=".SplashActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
