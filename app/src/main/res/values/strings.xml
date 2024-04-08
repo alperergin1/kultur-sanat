@@ -12,6 +12,9 @@
     <string name="theatres_screen">Tiyatrolar ekranı</string>
     <string name="theatre_screen">Tiyatrı ekranı</string>
     <string name="tiyatrolar_git">Tiyatro Seç</string>
+    <string name="ozet_onaya_git">Onaylama ekranına git</string>
+    <string name="koltuk1_seç">1</string>
+    <string name="koltuk2_seç">2</string>
     <string name="theatre_seats_screen">Tiyatro koltukları ekranı</string>
     <string name="theatre_times_screen">Tiyatro saatleri ekranı</string>
     <string name="login_screen">Login ekranı</string>
