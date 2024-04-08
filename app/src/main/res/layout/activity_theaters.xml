@@ -22,16 +22,10 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/button_maine_git"
+            android:id="@+id/button_tiyatro_koltuk_secmeye_git"
             android:layout_width="200dp"
             android:layout_height="60dp"
             android:text="@string/tiyatro1_seç" />
-
-        <Button
-            android:id="@+id/button_logine_git"
-            android:layout_width="200dp"
-            android:layout_height="60dp"
-            android:text="@string/tiyatro2_seç" />
 
 
     </LinearLayout>
