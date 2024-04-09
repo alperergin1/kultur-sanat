@@ -2,19 +2,34 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
-    android:theme="@style/Theme.KulturSanat.Fullscreen">
+    android:layout_gravity="center">
 
-    <TextView
-        android:id="@+id/fullscreen_content"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="@string/sign_up_screen"
-        android:textSize="30sp" />
+        android:gravity="center_horizontal"
+        android:layout_gravity="top|center_horizontal"
+        android:orientation="vertical">
 
+        <EditText
+            android:id="@+id/editText_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kullanıcı Adı(e-mail)" />
 
+        <EditText
+            android:id="@+id/editText_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Şifre" />
+
+        <Button
+            android:id="@+id/button_signup_yap"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="@string/signup_yap" />
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,15 +38,35 @@
         android:layout_gravity="bottom|center_horizontal"
         android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/textView_signedup"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:gravity="center"
+            android:text="@string/kayıt_edildi"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView_username"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:gravity="center"
+            android:text="@string/username_signup_textview"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView_password"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:gravity="center"
+            android:text="@string/password_signup_textview"
+            android:textSize="30sp" />
+
         <Button
             android:id="@+id/button_maine_git"
             android:layout_width="200dp"
             android:layout_height="60dp"
-            android:text="@string/maine_git" />
-
-
-
-
+            android:text="@string/ana_sayfaya_git" />
     </LinearLayout>
 
 </FrameLayout>
