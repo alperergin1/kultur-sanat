@@ -35,6 +35,7 @@
     <string name="login_yap">Login</string>
     <string name="ana_sayfaya_git">Ana Sayfaya Git</string>
     <string name="film_saatlerine_git">Film Saatleri</string>
-    <string name="logine_git">Login\'e git</string>
+    <string name="logine_git">Login sayfasına git</string>
+    <string name="signupa_git">Sign-up sayfasına git</string>
     <string name="tiyatro1_seç">Tiyatro 1</string>
 </resources>

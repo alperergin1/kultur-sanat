@@ -32,6 +32,12 @@ public class SplashActivity extends AppCompatActivity {
                 startLoginActivity();
             }
         });
+        findViewById(R.id.button_signupa_git).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startSignupActivity();
+            }
+        });
     }
 
     private void startLoginActivity() {
@@ -40,6 +46,10 @@ public class SplashActivity extends AppCompatActivity {
     }
     private void startMainActivity() {
         Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+        startActivity(intent);
+    }
+    private void startSignupActivity() {
+        Intent intent = new Intent(SplashActivity.this, SignUpActivity.class);
         startActivity(intent);
     }
 }
