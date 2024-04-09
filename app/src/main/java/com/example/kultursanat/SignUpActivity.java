@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.content.Context;
+import android.content.SharedPreferences;
+
 
 public class SignUpActivity extends AppCompatActivity {
 
@@ -46,5 +49,13 @@ public class SignUpActivity extends AppCompatActivity {
 
         textView_signup_username.setText(getString(R.string.username_signup_textview) + " " + kullaniciAdiSignup);
         textView_signup_password.setText(getString(R.string.password_signup_textview) + " " + sifreSignup);
+
+        SharedPreferences sharedPreferences = getSharedPreferences("user_prefs", MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("username", kullaniciAdiSignup);
+        editor.putString("password", sifreSignup);
+        editor.apply();
+
+
     }
 }
