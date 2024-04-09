@@ -13,6 +13,7 @@
     <string name="theatre_screen">Tiyatro ekranı</string>
     <string name="tiyatrolara_git">Tiyatrolara git</string>
     <string name="tiyatroya_git">Tiyatro Seç</string>
+    <string name="profile_git">Profile Git</string>
     <string name="ozet_onaya_git">Onaylama ekranına git</string>
     <string name="koltuk1_seç">1</string>
     <string name="koltuk2_seç">2</string>
@@ -26,7 +27,7 @@
     <string name="login_screen">Login ekranı</string>
     <string name="sinemaya_git">Sinemaya git</string>
     <string name="maine_git">Main\'e git</string>
-    <string name="onay_yap">Bileti onayla ve çıkış yap</string>
+    <string name="onay_yap">Bileti onayla ve ana menüye dön</string>
     <string name="çıkış_yap">Çıkış yap</string>
     <string name="sinema_tarihine_git">Tarihe-Zaman seç</string>
     <string name="login_yap">Login</string>

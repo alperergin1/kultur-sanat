@@ -26,6 +26,13 @@ public class MainActivity extends AppCompatActivity {
                 startTheatreActivity();
             }
         });
+
+        findViewById(R.id.button_profile_git).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startProfileActivity();
+            }
+        });
     }
 
     private void startCinemaActivity() {
@@ -34,6 +41,10 @@ public class MainActivity extends AppCompatActivity {
     }
     private void startTheatreActivity() {
         Intent intent = new Intent(MainActivity.this, TheatreActivity.class);
+        startActivity(intent);
+    }
+    private void startProfileActivity() {
+        Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
         startActivity(intent);
     }
 }

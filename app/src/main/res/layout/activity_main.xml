@@ -36,6 +36,13 @@
             android:layout_gravity="bottom|center_horizontal"
             android:text="@string/tiyatroya_git" />
 
+        <Button
+            android:id="@+id/button_profile_git"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="@string/profile_git" />
+
 
     </LinearLayout>
 
