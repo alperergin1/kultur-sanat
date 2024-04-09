@@ -4,10 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.view.WindowManager;
 
 public class SplashActivity extends AppCompatActivity {
+
+    private static final long SPLASH_TIME_OUT = 2500; // Bekleme süresi (ms)
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,25 +22,16 @@ public class SplashActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_splash);
 
-        findViewById(R.id.button_maine_git).setOnClickListener(new View.OnClickListener() {
+        /*
+        new Handler().postDelayed(new Runnable() {
             @Override
-            public void onClick(View v) {
+            public void run() {
                 startMainActivity();
+                finish(); // SplashActivity'yi kapat
             }
-        });
+        }, SPLASH_TIME_OUT);
 
-        findViewById(R.id.button_logine_git).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startLoginActivity();
-            }
-        });
-        findViewById(R.id.button_signupa_git).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startSignupActivity();
-            }
-        });
+*/
     }
 
     private void startLoginActivity() {
@@ -46,10 +40,6 @@ public class SplashActivity extends AppCompatActivity {
     }
     private void startMainActivity() {
         Intent intent = new Intent(SplashActivity.this, MainActivity.class);
-        startActivity(intent);
-    }
-    private void startSignupActivity() {
-        Intent intent = new Intent(SplashActivity.this, SignUpActivity.class);
         startActivity(intent);
     }
 }
