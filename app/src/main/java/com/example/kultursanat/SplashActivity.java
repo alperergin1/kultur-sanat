@@ -3,14 +3,15 @@ package com.example.kultursanat;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.View;
 import android.view.WindowManager;
 
 public class SplashActivity extends AppCompatActivity {
 
-    private static final long SPLASH_TIME_OUT = 2500; // Bekleme süresi (ms)
+    private static final long SPLASH_TIME_OUT = 1100; // Bekleme süresi (ms)
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,16 +23,22 @@ public class SplashActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_splash);
 
-        /*
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startMainActivity();
+                boolean x=loginOlmusMu();
+                if (x){
+                    startMainActivity();
+                }
+                else {
+                    startLoginActivity();
+                }
+
                 finish(); // SplashActivity'yi kapat
             }
         }, SPLASH_TIME_OUT);
 
-*/
     }
 
     private void startLoginActivity() {
@@ -42,4 +49,23 @@ public class SplashActivity extends AppCompatActivity {
         Intent intent = new Intent(SplashActivity.this, MainActivity.class);
         startActivity(intent);
     }
+
+    public boolean loginOlmusMu() {
+        boolean loginOlundu=false;
+
+
+        SharedPreferences sharedPreferences = getSharedPreferences("user_prefs", MODE_PRIVATE);
+        String savedUsername = sharedPreferences.getString("username", "");
+        String savedPassword = sharedPreferences.getString("password", "");
+
+
+        if (savedUsername!=""&&savedPassword!=""){
+            loginOlundu=true;
+        }
+        return loginOlundu;
+
+
+
+    }
+
 }
