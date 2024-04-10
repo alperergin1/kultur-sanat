@@ -43,4 +43,10 @@
     <string name="signupa_git">Sign-up sayfasına git</string>
     <string name="tiyatro1_seç">Tiyatro 1</string>
 
+    <string name="film1_seans1e_git">Film1 Seans1</string>
+    <string name="film1_seans2ye_git">Film1 Seans2</string>
+    <string name="film2_seans1e_git">Film2 Seans1</string>
+    <string name="film2_seans2ye_git">Film2 Seans2</string>
+
+
 </resources>
