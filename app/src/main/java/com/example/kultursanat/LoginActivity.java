@@ -75,6 +75,7 @@ public class LoginActivity extends AppCompatActivity {
         editor.putString("username", kullaniciAdiSignup);
         editor.putString("password", sifreSignup);
         editor.apply();
+
     }
 
 }
