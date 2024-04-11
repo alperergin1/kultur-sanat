@@ -44,11 +44,6 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    private void startMainActivity() {
-        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-        startActivity(intent);
-    }
-
     private void login_yap() {
 
     }
@@ -65,10 +60,11 @@ public class LoginActivity extends AppCompatActivity {
         textView_signup_username.setText(getString(R.string.username_signup_textview) + " " + kullaniciAdiSignup);
         textView_signup_password.setText(getString(R.string.password_signup_textview) + " " + sifreSignup);
 
-        SharedPreferences sharedPreferences = getSharedPreferences("user_prefs", MODE_PRIVATE);
+        SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("username", kullaniciAdiSignup);
         editor.putString("password", sifreSignup);
+
         editor.apply();
 
     }

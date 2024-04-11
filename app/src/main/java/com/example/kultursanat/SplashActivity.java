@@ -35,7 +35,7 @@ public class SplashActivity extends AppCompatActivity {
                     startLoginActivity();
                 }
 
-                finish(); // SplashActivity'yi kapat
+                finish();
             }
         }, SPLASH_TIME_OUT);
 
@@ -47,6 +47,7 @@ public class SplashActivity extends AppCompatActivity {
     }
     private void startMainActivity() {
         Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+
         startActivity(intent);
     }
 
@@ -54,17 +55,17 @@ public class SplashActivity extends AppCompatActivity {
         boolean loginOlundu=false;
 
 
-        SharedPreferences sharedPreferences = getSharedPreferences("user_prefs", MODE_PRIVATE);
+        SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
         String savedUsername = sharedPreferences.getString("username", "");
         String savedPassword = sharedPreferences.getString("password", "");
 
+        Intent intent = new Intent(SplashActivity.this, SplashActivity.class);
+        intent.putExtra("username", savedUsername);
 
         if (savedUsername!=""&&savedPassword!=""){
             loginOlundu=true;
         }
         return loginOlundu;
-
-
 
     }
 

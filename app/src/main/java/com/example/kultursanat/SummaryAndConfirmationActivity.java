@@ -3,6 +3,7 @@ package com.example.kultursanat;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -14,21 +15,25 @@ public class SummaryAndConfirmationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_summary_and_confirmation);
 
-        // Intent'ten verileri al
-        Intent intent = getIntent();
-        String selectedSeans = intent.getStringExtra("selectedSeans");
-        String selectedSeat = intent.getStringExtra("selectedSeat");
-        String kullaniciAdiSignup = intent.getStringExtra("username");
+        SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+        String savedUsername = sharedPreferences.getString("username", "");
+        String selectedSeans = sharedPreferences.getString("username", "");
+        String selectedSeat = sharedPreferences.getString("username", "");
 
-        // TextView'ları bul
-        TextView textView_signup_username = findViewById(R.id.textView_show_user);
-        TextView textViewMovie = findViewById(R.id.textView_show_movie);
-        TextView textViewSeat = findViewById(R.id.textView_show_seat);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("savedUsername", savedUsername);
+        editor.putString("selectedSeans", selectedSeans);
+        editor.putString("selectedSeat", selectedSeat);
+        editor.apply();
 
-        // TextView'lara verileri yazdır
-        textView_signup_username.setText(getString(R.string.show_user, kullaniciAdiSignup));
-        textViewMovie.setText(getString(R.string.show_movie, selectedSeans));
-        textViewSeat.setText(getString(R.string.show_seat, selectedSeat));
+        TextView textView_signup_username = findViewById(R.id.textView_username);
+        TextView textView_signup_password = findViewById(R.id.textView_password);
+        TextView textView_signup_username = findViewById(R.id.textView_username);
+
+
+        textView_show_user.setText(getString(R.string.username_signup_textview) + " " + savedUsername);
+        textView_show_movie.setText(getString(R.string.password_signup_textview) + " " + selectedSeans);
+        textView_show_seat.setText(getString(R.string.password_signup_textview) + " " + selectedSeat);
 
         findViewById(R.id.button_maine_git).setOnClickListener(new View.OnClickListener() {
             @Override
