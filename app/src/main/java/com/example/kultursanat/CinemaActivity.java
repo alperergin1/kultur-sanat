@@ -3,8 +3,11 @@ package com.example.kultursanat;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 public class CinemaActivity extends AppCompatActivity {
 
@@ -12,44 +15,17 @@ public class CinemaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cinema);
+    }
 
-        findViewById(R.id.button_film1_seans1e_git).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startMovieSeatsActivity();
-            }
-        });
+    public void seansClicked(View view) {
+        Button seansButton = (Button) view;
+        String selectedSeans = seansButton.getText().toString();
 
-        findViewById(R.id.button_film1_seans1e_git).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startMovieSeatsActivity();
-            }
-        });
+        SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("selectedSeans", selectedSeans);
+        editor.apply();
 
-        findViewById(R.id.button_film1_seans2ye_git).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startMovieSeatsActivity();
-            }
-        });
-
-        findViewById(R.id.button_film2_seans1e_git).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startMovieSeatsActivity();
-            }
-        });
-
-        findViewById(R.id.button_film2_seans2ye_git).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startMovieSeatsActivity();
-            }
-        });
-     }
-
-    private void startMovieSeatsActivity() {
         Intent intent = new Intent(CinemaActivity.this, MovieSeatsActivity.class);
         startActivity(intent);
     }
