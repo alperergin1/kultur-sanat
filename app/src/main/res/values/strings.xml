@@ -47,9 +47,10 @@
     <string name="film1_seans2ye_git">Film1 Seans2</string>
     <string name="film2_seans1e_git">Film2 Seans1</string>
     <string name="film2_seans2ye_git">Film2 Seans2</string>
-    <string name="show_user"></string>
-    <string name="show_movie">Film</string>
-    <string name="show_seat">Koltuk</string>
+
+    <string name="show_user">%s</string>
+    <string name="show_movie">Etkinlik: %s</string>
+    <string name="show_seat">Koltuk: %s</string>
 
     <string name="film_koltuk_1">1</string>
     <string name="film_koltuk_2">2</string>
@@ -60,6 +61,7 @@
     <string name="film_koltuk_7">7</string>
     <string name="film_koltuk_8">8</string>
     <string name="film_koltuk_9">9</string>
+
 
 
 </resources>

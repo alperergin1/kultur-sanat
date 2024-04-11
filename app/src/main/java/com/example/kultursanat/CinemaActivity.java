@@ -27,6 +27,7 @@ public class CinemaActivity extends AppCompatActivity {
         editor.apply();
 
         Intent intent = new Intent(CinemaActivity.this, MovieSeatsActivity.class);
+        intent.putExtra("selectedSeans", selectedSeans);
         startActivity(intent);
     }
 }

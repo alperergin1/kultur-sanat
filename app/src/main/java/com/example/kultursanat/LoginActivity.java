@@ -71,9 +71,6 @@ public class LoginActivity extends AppCompatActivity {
         editor.putString("password", sifreSignup);
         editor.apply();
 
-        if (kullaniciAdiSignup!=""&&sifreSignup!=""){
-            startMainActivity();
-        }
     }
 
 }

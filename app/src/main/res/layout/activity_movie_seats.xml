@@ -23,63 +23,63 @@
 
         <Button
             android:id="@+id/button_film_koltuk_1"
-            android:layout_width="50dp"
+            android:layout_width="100dp"
             android:layout_height="50dp"
             android:text="@string/film_koltuk_1"
             android:onClick="seatClicked"/>
 
         <Button
             android:id="@+id/button_film_koltuk_2"
-            android:layout_width="50dp"
+            android:layout_width="100dp"
             android:layout_height="50dp"
             android:text="@string/film_koltuk_2"
             android:onClick="seatClicked"/>
 
         <Button
             android:id="@+id/button_film_koltuk_3"
-            android:layout_width="50dp"
+            android:layout_width="100dp"
             android:layout_height="50dp"
             android:text="@string/film_koltuk_3"
             android:onClick="seatClicked"/>
 
         <Button
             android:id="@+id/button_film_koltuk_4"
-            android:layout_width="50dp"
+            android:layout_width="100dp"
             android:layout_height="50dp"
             android:text="@string/film_koltuk_4"
             android:onClick="seatClicked"/>
 
         <Button
             android:id="@+id/button_film_koltuk_5"
-            android:layout_width="50dp"
+            android:layout_width="100dp"
             android:layout_height="50dp"
             android:text="@string/film_koltuk_5"
             android:onClick="seatClicked"/>
 
         <Button
             android:id="@+id/button_film_koltuk_6"
-            android:layout_width="50dp"
+            android:layout_width="100dp"
             android:layout_height="50dp"
             android:text="@string/film_koltuk_6"
             android:onClick="seatClicked"/>
 
         <Button
             android:id="@+id/button_film_koltuk_7"
-            android:layout_width="50dp"
+            android:layout_width="100dp"
             android:layout_height="50dp"
             android:text="@string/film_koltuk_7"
             android:onClick="seatClicked"/>
 
         <Button
             android:id="@+id/button_film_koltuk_8"
-            android:layout_width="50dp"
+            android:layout_width="100dp"
             android:layout_height="50dp"
             android:text="@string/film_koltuk_8"
             android:onClick="seatClicked"/>
 
         <Button
             android:id="@+id/button_film_koltuk_9"
-            android:layout_width="50dp"
+            android:layout_width="100dp"
             android:layout_height="50dp"
             android:text="@string/film_koltuk_9"
             android:onClick="seatClicked"/>

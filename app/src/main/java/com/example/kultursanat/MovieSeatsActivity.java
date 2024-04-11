@@ -20,13 +20,17 @@ public class MovieSeatsActivity extends AppCompatActivity {
         public void seatClicked(View view){
             Button seansButton = (Button) view;
             String selectedSeat = seansButton.getText().toString();
+            String selectedSeans = seansButton.getText().toString();
 
             SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
             SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.putString("selectedSeat", selectedSeat);
+            editor.putString("selectedSeans", selectedSeans);
             editor.apply();
 
             Intent intent = new Intent(MovieSeatsActivity.this, SummaryAndConfirmationActivity.class);
+            intent.putExtra("selectedSeat", selectedSeat);
+            intent.putExtra("selectedSeans", selectedSeans);
             startActivity(intent);
         }
     }
