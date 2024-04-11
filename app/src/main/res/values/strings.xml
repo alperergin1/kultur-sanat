@@ -47,6 +47,9 @@
     <string name="film1_seans2ye_git">Film1 Seans2</string>
     <string name="film2_seans1e_git">Film2 Seans1</string>
     <string name="film2_seans2ye_git">Film2 Seans2</string>
+    <string name="show_user"></string>
+    <string name="show_movie">Film</string>
+    <string name="show_seat">Koltuk</string>
 
 
 </resources>

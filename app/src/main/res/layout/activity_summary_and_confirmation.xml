@@ -9,7 +9,7 @@
         android:id="@+id/fullscreen_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_gravity="top|center_horizontal"
         android:gravity="center"
         android:text="@string/summary_and_confirmation_screen"
         android:textSize="30sp" />
@@ -18,17 +18,44 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:layout_gravity="bottom|center_horizontal"
+        android:layout_gravity="center"
         android:orientation="vertical">
 
-        <Button
-            android:id="@+id/button_maine_git"
-            android:layout_width="200dp"
-            android:layout_height="60dp"
-            android:text="@string/onay_yap" />
+        <TextView
+            android:id="@+id/textView_show_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/show_user"
+            android:textSize="30sp" />
 
+        <TextView
+            android:id="@+id/textView_show_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/show_movie"
+            android:textSize="30sp" />
 
+        <TextView
+            android:id="@+id/textView_show_seat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/show_seat"
+            android:textSize="30sp" />
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button_maine_git"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|center_horizontal"
+
+        android:text="@string/onay_yap" />
 
 </FrameLayout>
