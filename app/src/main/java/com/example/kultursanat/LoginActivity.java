@@ -27,12 +27,7 @@ public class LoginActivity extends AppCompatActivity {
         EditText editText_password = findViewById(R.id.editText_password);
         editText_username.setText(savedUsername);
         editText_password.setText(savedPassword);
-        findViewById(R.id.button_maine_git).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startMainActivity();
-            }
-        });
+
 
         findViewById(R.id.button_login_yap).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,6 +71,9 @@ public class LoginActivity extends AppCompatActivity {
         editor.putString("password", sifreSignup);
         editor.apply();
 
+        if (kullaniciAdiSignup!=""&&sifreSignup!=""){
+            startMainActivity();
+        }
     }
 
 }
