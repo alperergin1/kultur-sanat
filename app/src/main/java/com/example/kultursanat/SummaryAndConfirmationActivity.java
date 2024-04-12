@@ -17,8 +17,8 @@ public class SummaryAndConfirmationActivity extends AppCompatActivity {
 
         SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
         String savedUsername = sharedPreferences.getString("username", "");
-        String selectedSeans = sharedPreferences.getString("username", "");
-        String selectedSeat = sharedPreferences.getString("username", "");
+        String selectedSeans = sharedPreferences.getString("selectedSeans", "");
+        String selectedSeat = sharedPreferences.getString("selectedSeat", "");
 
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("savedUsername", savedUsername);
@@ -26,14 +26,14 @@ public class SummaryAndConfirmationActivity extends AppCompatActivity {
         editor.putString("selectedSeat", selectedSeat);
         editor.apply();
 
-        TextView textView_signup_username = findViewById(R.id.textView_username);
-        TextView textView_signup_password = findViewById(R.id.textView_password);
-        TextView textView_signup_username = findViewById(R.id.textView_username);
+        TextView textView_show_user = findViewById(R.id.textView_show_user);
+        TextView textView_show_movie = findViewById(R.id.textView_show_movie);
+        TextView textView_show_seat = findViewById(R.id.textView_show_seat);
 
 
-        textView_show_user.setText(getString(R.string.username_signup_textview) + " " + savedUsername);
-        textView_show_movie.setText(getString(R.string.password_signup_textview) + " " + selectedSeans);
-        textView_show_seat.setText(getString(R.string.password_signup_textview) + " " + selectedSeat);
+        textView_show_user.setText(getString(R.string.username_summary_textview) + " " + savedUsername);
+        textView_show_movie.setText(getString(R.string.movie_summary_textview) + " " + selectedSeans);
+        textView_show_seat.setText(getString(R.string.seat_summary_textview) + " " + selectedSeat);
 
         findViewById(R.id.button_maine_git).setOnClickListener(new View.OnClickListener() {
             @Override

@@ -61,8 +61,9 @@ public class SplashActivity extends AppCompatActivity {
 
         Intent intent = new Intent(SplashActivity.this, SplashActivity.class);
         intent.putExtra("username", savedUsername);
+        intent.putExtra("password", savedPassword);
 
-        if (savedUsername!=""&&savedPassword!=""){
+        if (savedUsername!="" && savedPassword!=""){
             loginOlundu=true;
         }
         return loginOlundu;

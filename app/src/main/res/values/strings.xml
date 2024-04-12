@@ -30,6 +30,9 @@
     <string name="password_login_textview">Şifre</string>
     <string name="password_signup_textview">Şifre</string>
     <string name="username_signup_textview">Kullanıcı Adı</string>
+    <string name="username_summary_textview">Kullanıcı Adı</string>
+    <string name="movie_summary_textview">Seans</string>
+    <string name="seat_summary_textview">Koltuk</string>
     <string name="sinemaya_git">Sinemaya git</string>
     <string name="maine_git">Main\'e git</string>
     <string name="onay_yap">Bileti onayla ve ana menüye dön</string>
