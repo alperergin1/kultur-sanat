@@ -37,11 +37,15 @@ public class SplashActivity extends AppCompatActivity {
         Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
         startActivity(intent);
     }
+
+    /*
     private void startMainActivity() {
         Intent intent = new Intent(SplashActivity.this, MainActivity.class);
 
         startActivity(intent);
     }
+
+     */
 
     /*public boolean loginOlmusMu() {
         boolean loginOlundu=false;
