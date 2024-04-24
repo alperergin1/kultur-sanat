@@ -27,15 +27,7 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                boolean x=loginOlmusMu();
-                if (x){
-                    startMainActivity();
-                }
-                else {
-                    startLoginActivity();
-                }
-
-                finish();
+                startLoginActivity();
             }
         }, SPLASH_TIME_OUT);
 
@@ -51,7 +43,7 @@ public class SplashActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public boolean loginOlmusMu() {
+    /*public boolean loginOlmusMu() {
         boolean loginOlundu=false;
 
 
@@ -67,7 +59,8 @@ public class SplashActivity extends AppCompatActivity {
             loginOlundu=true;
         }
         return loginOlundu;
+     */
 
-    }
+
 
 }

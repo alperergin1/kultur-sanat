@@ -39,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
         findViewById(R.id.button_signup_yap).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                signup_yap();
+                startSignUpActivity();
             }
         });
     }
@@ -48,6 +48,12 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
+    private void startSignUpActivity() {
+        Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
+        startActivity(intent);
+    }
+
+    /*
     private void signup_yap() {
         EditText editText_username = findViewById(R.id.editText_username);
         EditText editText_password = findViewById(R.id.editText_password);
@@ -68,5 +74,7 @@ public class LoginActivity extends AppCompatActivity {
         editor.apply();
 
     }
+
+     */
 
 }

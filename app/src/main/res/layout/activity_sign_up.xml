@@ -12,10 +12,16 @@
         android:orientation="vertical">
 
         <EditText
+            android:id="@+id/editText_nameSurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="İsim Soyisim" />
+
+        <EditText
             android:id="@+id/editText_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Kullanıcı Adı(e-mail)" />
+            android:hint="Kullanıcı Adı" />
 
         <EditText
             android:id="@+id/editText_password"
