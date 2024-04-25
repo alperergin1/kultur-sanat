@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/button_background.xml -->
+
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -29,11 +31,14 @@
             android:layout_height="60dp"
             android:text="@string/login_yap" />
 
-        <Button
+        <TextView
             android:id="@+id/button_signup_yap"
             android:layout_width="200dp"
             android:layout_height="60dp"
-            android:text="@string/signup_yap" />
+            android:gravity="center"
+            android:text="@string/signup_yap"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_background" />
 
     </LinearLayout>
 
