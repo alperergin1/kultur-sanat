@@ -1,3 +1,4 @@
+// MainActivity.java
 package com.example.kultursanat;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -5,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.content.SharedPreferences;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,18 +35,41 @@ public class MainActivity extends AppCompatActivity {
                 startProfileActivity();
             }
         });
+
+        findViewById(R.id.button_logout).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                logoutUser();
+            }
+        });
     }
 
     private void startCinemaActivity() {
         Intent intent = new Intent(MainActivity.this, CinemaActivity.class);
         startActivity(intent);
     }
+
     private void startTheatreActivity() {
         Intent intent = new Intent(MainActivity.this, TheatreActivity.class);
         startActivity(intent);
     }
+
     private void startProfileActivity() {
         Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
         startActivity(intent);
+    }
+
+    private void logoutUser() {
+        // SharedPreferences'teki verileri silmeden oturumu sonlandır
+        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+        finish();
+    }
+
+
+    @Override
+    public void onBackPressed() {
+        // Geri tuşu için istediğiniz işlevi buraya ekleyebilirsiniz
     }
 }

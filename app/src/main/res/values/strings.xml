@@ -7,6 +7,10 @@
     <string name="movie_times_screen">Film saatleri ekranı</string>
     <string name="movies_screen">Filmler ekranı</string>
     <string name="profile_screen">Profile ekranı</string>
+
+    <string name="logout_button_text">Çıkış Yap</string>
+
+
     <string name="sign_up_screen">Kayıt ekranı</string>
     <string name="summary_and_confirmation_screen">Özet ve onaylama ekranı</string>
     <string name="theatres_screen">Tiyatrolar ekranı</string>

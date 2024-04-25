@@ -18,8 +18,7 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         getSupportActionBar().hide();
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_splash);
 
@@ -32,6 +31,7 @@ public class SplashActivity extends AppCompatActivity {
         }, SPLASH_TIME_OUT);
 
     }
+
 
     private void startLoginActivity() {
         Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
@@ -50,7 +50,6 @@ public class SplashActivity extends AppCompatActivity {
     /*public boolean loginOlmusMu() {
         boolean loginOlundu=false;
 
-
         SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
         String savedUsername = sharedPreferences.getString("username", "");
         String savedPassword = sharedPreferences.getString("password", "");
@@ -64,7 +63,4 @@ public class SplashActivity extends AppCompatActivity {
         }
         return loginOlundu;
      */
-
-
-
 }
