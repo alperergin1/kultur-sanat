@@ -50,7 +50,7 @@ public class SplashActivity extends AppCompatActivity {
     /*public boolean loginOlmusMu() {
         boolean loginOlundu=false;
 
-        SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+        SharedPreferences sharedPreferences = getSharedPreferences("user_prefs", MODE_PRIVATE);
         String savedUsername = sharedPreferences.getString("username", "");
         String savedPassword = sharedPreferences.getString("password", "");
 

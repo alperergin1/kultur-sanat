@@ -21,7 +21,7 @@ public class CinemaActivity extends AppCompatActivity {
         Button seansButton = (Button) view;
         String selectedSeans = seansButton.getText().toString();
 
-        SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+        SharedPreferences sharedPreferences = getSharedPreferences("user_prefs", MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("selectedSeans", selectedSeans);
         editor.apply();

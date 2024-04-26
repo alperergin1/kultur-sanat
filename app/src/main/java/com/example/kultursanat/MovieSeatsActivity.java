@@ -17,9 +17,12 @@ public class MovieSeatsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movie_seats);
 
-        SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+        SharedPreferences sharedPreferences = getSharedPreferences("user_prefs", MODE_PRIVATE);
         String[] selectedSeats = sharedPreferences.getString("selectedSeats", "").split(",");
+
         Button[] seatButtons = new Button[9];
+
+
         seatButtons[0] = findViewById(R.id.button_film_koltuk_1);
         seatButtons[1] = findViewById(R.id.button_film_koltuk_2);
         seatButtons[2] = findViewById(R.id.button_film_koltuk_3);
@@ -31,27 +34,28 @@ public class MovieSeatsActivity extends AppCompatActivity {
         seatButtons[8] = findViewById(R.id.button_film_koltuk_9);
 
         for (String seat : selectedSeats) {
-            int seatIndex = Integer.parseInt(seat.trim()) - 1;
-            if (seatIndex >= 0 && seatIndex < 9) {
-                Button selectedButton = seatButtons[seatIndex];
-                selectedButton.setEnabled(false);
-                selectedButton.setTextColor(Color.GRAY);
+            if (!seat.isEmpty()) {
+                int seatIndex = Integer.parseInt(seat.trim()) - 1;
+                if (seatIndex >= 0 && seatIndex < 9) {
+                    Button selectedButton = seatButtons[seatIndex];
+                    selectedButton.setEnabled(false);
+                    selectedButton.setTextColor(Color.GRAY);
+                }
             }
         }
-
     }
 
-        public void seatClicked(View view){
-            Button seatButton = (Button) view;
-            String selectedSeat = seatButton.getText().toString();
+    public void seatClicked(View view) {
+        Button seatButton = (Button) view;
+        String selectedSeat = seatButton.getText().toString();
 
-            SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
-            SharedPreferences.Editor editor = sharedPreferences.edit();
-            editor.putString("selectedSeat", selectedSeat);
-            editor.apply();
+        SharedPreferences sharedPreferences = getSharedPreferences("user_prefs", MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("selectedSeat", selectedSeat);
+        editor.apply();
 
-            Intent intent = new Intent(MovieSeatsActivity.this, SummaryAndConfirmationActivity.class);
-            startActivity(intent);
-        }
+        Intent intent = new Intent(MovieSeatsActivity.this, SummaryAndConfirmationActivity.class);
+        startActivity(intent);
     }
+}
 
