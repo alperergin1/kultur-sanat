@@ -68,6 +68,7 @@
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:text="@string/film_koltuk_7"
+            android:background="@drawable/twotone_airline_seat_recline_extra_24"
             android:onClick="seatClicked"/>
 
         <Button
