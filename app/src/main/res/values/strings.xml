@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">Kultur Sanat</string>
     <string name="main_screen">Ana sayfa</string>
-    <string name="splash_screen">Splash ekranı</string>
+    <string name="splash_screen"></string>
     <string name="cinema_screen">Sinema ekranı</string>
-    <string name="movie_seats_screen">Film koltukları ekranı</string>
-    <string name="movie_times_screen">Film saatleri ekranı</string>
+    <string name="movie_seats_screen">Film Koltukları</string>
+    <string name="movie_times_screen">Film Saatleri</string>
     <string name="movies_screen">Filmler ekranı</string>
     <string name="profile_screen">Profile ekranı</string>
 
@@ -12,8 +12,8 @@
 
 
     <string name="sign_up_screen">Kayıt ekranı</string>
-    <string name="summary_and_confirmation_screen">Özet ve onaylama ekranı</string>
-    <string name="theatres_screen">Tiyatrolar ekranı</string>
+    <string name="summary_and_confirmation_screen">Özet ve Onaylama</string>
+    <string name="theatres_screen">Mevcut Tiyatrolar</string>
     <string name="theatre_screen">Tiyatro ekranı</string>
     <string name="tiyatrolara_git">Tiyatrolara git</string>
     <string name="tiyatroya_git">Tiyatro Seç</string>
@@ -22,8 +22,8 @@
     <string name="koltuk1_seç">1</string>
     <string name="koltuk2_seç">2</string>
     <string name="koltuk_secmeye_git">Koltuk Seç</string>
-    <string name="theatre_seats_screen">Tiyatro koltukları ekranı</string>
-    <string name="theatre_times_screen">Tiyatro saatleri ekranı</string>
+    <string name="theatre_seats_screen">Tiyatro Koltukları</string>
+    <string name="theatre_times_screen">Tiyatro Saatleri</string>
     <string name="tiyatro1_saat1_seç">19:00</string>
     <string name="tiyatro1_saat2_seç">20:00</string>
     <string name="tiyatro2_saat1_seç">19:00</string>

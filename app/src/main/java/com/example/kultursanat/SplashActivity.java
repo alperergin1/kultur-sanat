@@ -10,7 +10,7 @@ import android.view.WindowManager;
 
 public class SplashActivity extends AppCompatActivity {
 
-    private static final long SPLASH_TIME_OUT = 1100; // Bekleme süresi (ms)
+    private static final long SPLASH_TIME_OUT = 1400;
 
 
     @Override

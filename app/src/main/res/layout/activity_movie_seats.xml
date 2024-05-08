@@ -26,6 +26,7 @@
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:text="@string/film_koltuk_1"
+            android:background="@drawable/twotone_airline_seat_recline_extra_24"
             android:onClick="seatClicked"/>
 
         <Button
@@ -33,6 +34,7 @@
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:text="@string/film_koltuk_2"
+            android:background="@drawable/twotone_airline_seat_recline_extra_24"
             android:onClick="seatClicked"/>
 
         <Button
@@ -40,6 +42,7 @@
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:text="@string/film_koltuk_3"
+            android:background="@drawable/twotone_airline_seat_recline_extra_24"
             android:onClick="seatClicked"/>
 
         <Button
@@ -47,6 +50,7 @@
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:text="@string/film_koltuk_4"
+            android:background="@drawable/twotone_airline_seat_recline_extra_24"
             android:onClick="seatClicked"/>
 
         <Button
@@ -54,6 +58,7 @@
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:text="@string/film_koltuk_5"
+            android:background="@drawable/twotone_airline_seat_recline_extra_24"
             android:onClick="seatClicked"/>
 
         <Button
@@ -61,6 +66,7 @@
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:text="@string/film_koltuk_6"
+            android:background="@drawable/twotone_airline_seat_recline_extra_24"
             android:onClick="seatClicked"/>
 
         <Button
@@ -76,6 +82,7 @@
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:text="@string/film_koltuk_8"
+            android:background="@drawable/twotone_airline_seat_recline_extra_24"
             android:onClick="seatClicked"/>
 
         <Button
@@ -83,6 +90,7 @@
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:text="@string/film_koltuk_9"
+            android:background="@drawable/twotone_airline_seat_recline_extra_24"
             android:onClick="seatClicked"/>
 
 
