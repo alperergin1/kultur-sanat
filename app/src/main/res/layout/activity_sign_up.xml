@@ -30,13 +30,16 @@
             android:layout_height="wrap_content"
             android:hint="Şifre" />
 
-        <Button
-            android:id="@+id/button_signup_yap"
-            android:layout_width="200dp"
-            android:layout_height="60dp"
-            android:text="@string/signup_yap" />
+
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -46,9 +49,19 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/button_maine_git"
+            android:id="@+id/button_signup_yap"
             android:layout_width="200dp"
             android:layout_height="60dp"
+            android:text="@string/signup_yap" />
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/button_maine_git"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/black"
             android:text="@string/ana_sayfaya_git" />
     </LinearLayout>
 </FrameLayout>
