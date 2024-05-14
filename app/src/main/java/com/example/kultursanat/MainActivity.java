@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void startTheatreActivity() {
-        Intent intent = new Intent(MainActivity.this, TheatreActivity.class);
+        Intent intent = new Intent(MainActivity.this, TheatersActivity.class);
         startActivity(intent);
     }
 
