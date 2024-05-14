@@ -7,8 +7,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
         android:layout_gravity="top|center_horizontal"
+        android:gravity="center_horizontal"
         android:orientation="vertical">
 
         <EditText
@@ -41,41 +41,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
         android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center_horizontal"
         android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/textView_signedup"
-            android:layout_width="wrap_content"
-            android:layout_height="26dp"
-            android:gravity="center"
-            android:text="@string/kayıt_edildi"
-            android:textSize="30sp" />
-
-        <TextView
-            android:id="@+id/textView_nameSurname"
-            android:layout_width="wrap_content"
-            android:layout_height="26dp"
-            android:gravity="center"
-            android:text="@string/adSoyad"
-            android:textSize="30sp" />
-
-        <TextView
-            android:id="@+id/textView_username"
-            android:layout_width="wrap_content"
-            android:layout_height="26dp"
-            android:gravity="center"
-            android:text="@string/username_signup_textview"
-            android:textSize="30sp" />
-
-        <TextView
-            android:id="@+id/textView_password"
-            android:layout_width="wrap_content"
-            android:layout_height="26dp"
-            android:gravity="center"
-            android:text="@string/password_signup_textview"
-            android:textSize="30sp" />
 
         <Button
             android:id="@+id/button_maine_git"
@@ -83,5 +51,4 @@
             android:layout_height="60dp"
             android:text="@string/ana_sayfaya_git" />
     </LinearLayout>
-
 </FrameLayout>

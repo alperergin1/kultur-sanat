@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Kültür Sanat</string>
     <string name="main_screen">Ana sayfa</string>
-    <string name="splash_screen"></string>
+    <string name="splash_screen">Kültür Sanat</string>
     <string name="cinema_screen">Sinema ekranı</string>
     <string name="movie_seats_screen">Film Koltukları</string>
     <string name="movie_times_screen">Film Saatleri</string>
@@ -72,7 +72,6 @@
     <string name="show_user">%s</string>
     <string name="show_movie">Etkinlik: %s</string>
     <string name="show_seat">Koltuk: %s</string>
-
 
 
 </resources>
