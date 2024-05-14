@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Kultur Sanat</string>
+    <string name="app_name">Kültür Sanat</string>
     <string name="main_screen">Ana sayfa</string>
     <string name="splash_screen"></string>
     <string name="cinema_screen">Sinema ekranı</string>
@@ -45,8 +45,8 @@
     <string name="onay_yap">Bileti onayla ve ana menüye dön</string>
     <string name="çıkış_yap">Çıkış yap</string>
     <string name="sinema_tarihine_git">Tarihe-Zaman seç</string>
-    <string name="login_yap">Login</string>
-    <string name="signup_yap">Sign up</string>
+    <string name="login_yap">Giriş</string>
+    <string name="signup_yap">Kaydol</string>
     <string name="ana_sayfaya_git">Ana Sayfaya Git</string>
     <string name="film_saatlerine_git">Film Saatleri</string>
     <string name="logine_git">Login sayfasına git</string>
