@@ -40,114 +40,115 @@
         android:id="@+id/textView_cinsiyet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:text="Cinsiyet:"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_top"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linearLayout_top" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
 
     <CheckBox
         android:id="@+id/checkBox_erkek"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="Erkek"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.215"
+        app:layout_constraintTop_toBottomOf="@id/textView_cinsiyet"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView_cinsiyet" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="2dp"/>
 
     <CheckBox
         android:id="@+id/checkBox_kadin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
         android:text="Kadın"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.215"
+        app:layout_constraintTop_toBottomOf="@id/checkBox_erkek"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/checkBox_erkek" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="2dp"/>
 
     <CheckBox
         android:id="@+id/checkBox_belirtmek_istemiyorum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:text="Belirtmek İstemiyorum"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintTop_toBottomOf="@id/checkBox_kadin"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/checkBox_kadin" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="2dp"/>
 
     <TextView
         android:id="@+id/textView_yas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Durumu:"
+        android:text="Yaş Kategorisi:"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintTop_toBottomOf="@id/checkBox_belirtmek_istemiyorum"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/checkBox_belirtmek_istemiyorum" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="6dp"/>
 
     <CheckBox
         android:id="@+id/checkBox_genc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Bebek"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        android:text="Genç"
+        app:layout_constraintTop_toBottomOf="@id/textView_yas"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView_yas" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="2dp"/>
 
     <CheckBox
         android:id="@+id/checkBox_yetiskin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Öğrenci"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.317"
+        android:text="Yetişkin"
+        app:layout_constraintTop_toBottomOf="@id/checkBox_genc"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/checkBox_genc" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="2dp"/>
 
     <CheckBox
         android:id="@+id/checkBox_yasli"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Çalışan"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
+        android:text="Yaşlı"
+        app:layout_constraintTop_toBottomOf="@id/checkBox_yetiskin"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/checkBox_yetiskin" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="2dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox_onaylama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Açık Rıza Metnini okudum onaylıyorum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkBox_yasli" />
 
     <Button
         android:id="@+id/button_signup_yap"
         android:layout_width="200dp"
         android:layout_height="60dp"
-        android:layout_marginTop="8dp"
         android:text="@string/signup_yap"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintTop_toBottomOf="@id/checkBox_onaylama"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/checkBox_yasli" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
 
     <Button
         android:id="@+id/button_maine_git"
         android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="60dp"
         android:background="@drawable/button_background"
-        android:text="@string/ana_sayfaya_git"
         android:textColor="@android:color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        android:text="@string/ana_sayfaya_git"
+        app:layout_constraintTop_toBottomOf="@id/button_signup_yap"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_signup_yap" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
