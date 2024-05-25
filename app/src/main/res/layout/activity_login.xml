@@ -51,6 +51,13 @@
             android:gravity="center"
             android:text="@string/signup_yap" />
 
+        <Button
+            android:id="@+id/button_sorgu_yap"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:text="@string/login_yap" />
+
 
     </LinearLayout>
 
